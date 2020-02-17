@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/*@import "compass";
+
+// Reversed?
+$reversed-text: false;
+@import "modules/utility";
+
+// Base Font
+$base-font-family: "Helvetica Neue", Hevetica, Arial, sans-serif;
+$base-font-size: 110%;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: Monaco, "Andale Mono", "Lucida Console", monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Text Colors
+$text-color: #333333;
+$loud-color: strengthen($text-color);
+$quiet-color: soften($text-color, 1.5);
+$header-color: strengthen($text-color, 0.66);
+
+// Link Colors
+$link-color: #bb3a08;
+$link-visited-color: #a72;
+$link-hover-color: #f66933;
+
+// Theme Colors
+$background-color: white;
+$banner-color: #973b12;
+
+// Paragraphs
+$indented-paragraphs: false;
+
+// Layout
+$body-margin-x: 15%;
+
+// Border Radius
+$default-border-radius: 8px;
+
+@import "modules/all";
+
+@include global-reset;
+@include reset-html5;
+
+html, body { background: $background-color; }
+body { @include base-font; }*/
+/*//
+// Virtual Content Classes
+//
+
+.links {
+  a { @include basic-link($link-color, $link-visited-color, $link-hover-color); }
+  a.more {
+    white-space: nowrap;
+    &:after { content: " »"; }
+  }
+}
+
+.typography {
+  @include basic-typography;
+}
+
+.content {
+  @extend .links;
+  @extend .typography;
+  
+  .box {
+    background: #efeacf;
+    border: 1px solid darken(#efeacf, 10);
+    @include border-radius;
+    margin: 1.5em -1em;
+    padding: 1px 1em;
+  }
+}
+
+
+//
+// Applied to appropriate elements
+//
+
+section[role=main] > article {
+  @extend .content
+}*/
+.coming-soon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("images/nan.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*//
+// Basic layout and styles for site
+//
+
+
+header[role=banner] {
+  background: $banner-color;
+  @include background-image(
+    linear-gradient(rgba(black, 0) 0%, rgba(black, 0) 80%, rgba(black, 0.15) 100%),
+    radial-gradient(30% 50px, $banner-color, darken($banner-color, 11) 400px)
+  );
+  padding: 20px $body-margin-x;
+  position: relative;
+  
+  a { @include basic-link(mix($banner-color, white, 20%), $hover: white, $decoration: "plain"); }
+  
+  .action-link {
+    position: absolute;
+    right: $body-margin-x;
+    top: 55px;
+    a {
+      background: rgba(white, 0.1);
+      @include border-radius;
+      display: block;
+      padding: 0.5em 1em;
+      @include text-shadow(mix($banner-color, black, 50%) 0 1px 0);
+      &:after { content: " ⇢"; }
+    }
+  }
+}
+
+section[role=main] {
+  padding: 1px $body-margin-x;
+}
+
+body > footer {
+  padding: 0 $body-margin-x 20px;
+  font-size: 90%;
+  color: $quiet-color;
+  a { @include basic-link($text-color); }
+  p { margin: 1em 0; }
+}*/
